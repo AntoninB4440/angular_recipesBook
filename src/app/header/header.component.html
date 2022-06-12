@@ -1,7 +1,15 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand h1" href="#">Recipe Book</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -10,12 +18,19 @@
           <a class="nav-link" (click)="onSelect('recipes')" href="#">Recipes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"(click)="onSelect('shopping-list')" href="#">Shopping list</a>
+          <a class="nav-link" (click)="onSelect('shopping-list')" href="#"
+            >Shopping list</a
+          >
         </li>
       </ul>
       <ul class="nav navbar-nav ms-auto">
         <li class="dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" >
+          <a
+            appDropdown
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+          >
             Manage
           </a>
           <ul class="dropdown-menu">
